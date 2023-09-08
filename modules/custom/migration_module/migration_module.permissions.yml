@@ -1,0 +1,31 @@
+add cities list entities:
+  title: 'Create new Cities List entities'
+
+administer cities list entities:
+  title: 'Administer Cities List entities'
+  description: 'Allow to access the administration form to configure Cities List entities.'
+  restrict access: true
+
+delete cities list entities:
+  title: 'Delete Cities List entities'
+
+edit cities list entities:
+  title: 'Edit Cities List entities'
+
+view published cities list entities:
+  title: 'View published Cities List entities'
+
+view unpublished cities list entities:
+  title: 'View unpublished Cities List entities'
+
+view all cities list revisions:
+  title: 'View all Cities List revisions'
+
+revert all cities list revisions:
+  title: 'Revert all Cities List revisions'
+  description: 'Role requires permission <em>view Cities List revisions</em> and <em>edit rights</em> for cities list entities in question or <em>administer cities list entities</em>.'
+
+delete all cities list revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Cities List revisions</em> and <em>delete rights</em> for cities list entities in question or <em>administer cities list entities</em>.'
+

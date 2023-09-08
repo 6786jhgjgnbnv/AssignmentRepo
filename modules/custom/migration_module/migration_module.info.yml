@@ -1,0 +1,8 @@
+name: 'Migration_module'
+type: module
+description: 'Mango db/json to drupal migration'
+core_version_requirement:  ^8 || ^9
+package: 'Custom'
+dependencies:
+  - drupal:address
+  - drupal:geolocation

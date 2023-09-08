@@ -1,0 +1,40 @@
+<?php
+
+/**
+ * @file
+ * Contains migration_module.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function migration_module_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the migration_module module.
+    case 'help.page.migration_module':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Mango db/json to drupal migration') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function migration_module_theme() {
+  return [
+    'migration_module' => [
+      'render element' => 'children',
+    ],
+  ];
+}
+// function migration_module_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+// $entity = \Drupal::entityTypeManager()->getStorage('city_entity')->load(78);
+
+// print_r($entity); die;
+// }
